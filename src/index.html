@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - 1,2</title>
+    <link rel="stylesheet" href="input.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section
+      id="background-img"
+      class="bg-[url('/Images/1.jpg')] bg-cover bg-center h-screen relative z-[1] after:absolute after:content-[''] after:z-[-1] after:opacity-50 after:bg-black after:top-0 after:left-0 after:w-full after:h-full"
+    >
+      <div id="container" class="max-w-[1200px] mx-auto">
+        <header id="navber" class="flex justify-between items-center py-8">
+          <div id="nav-logo">
+            <img
+              class="w-[130px]"
+              src="../Images/logo-light.png"
+              alt="Logo-Light"
+            />
+          </div>
+
+          <div id="nav-menu" class="flex items-center gap-[35px] ml-6">
+            <ul class="flex gap-[20px] text-white text-[14px] relative">
+              <li
+                class="text-[rgb(245,183,84)] group relative transition duration-300 ease-in-out"
+              >
+                <a href="#" class="flex items-center gap-1"
+                  >Home <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <div
+                  id="dropdown-menu"
+                  class="absolute top-full left-0 w-[150px] bg-[#222222] p-5 rounded-2xl opacity-0 translate-y-2 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible pointer-events-auto group"
+                >
+                  <ul class="text-white space-y-2">
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Slider 01</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Slider 02</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Image 01</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Image 02</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="hover:text-[rgb(245,183,84)] transition duration-300 ease-in-out"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="hover:text-[rgb(245,183,84)] transition duration-300 ease-in-out group"
+              >
+                <a href="#">Service <i class="fa-solid fa-caret-down"></i></a>
+
+                <div
+                  id="dropdown-menu"
+                  class="absolute top-full w-[160px] bg-[#222222] p-5 rounded-2xl opacity-0 translate-y-2 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible pointer-events-auto"
+                >
+                  <ul class="text-white space-y-2">
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Service 01</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Service 02</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Service Details</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="hover:text-[rgb(245,183,84)] group relative transition duration-300 ease-in-out"
+              >
+                <a href="#">Cars <i class="fa-solid fa-caret-down"></i></a>
+                <div
+                  id="dropdown-menu"
+                  class="absolute top-full left-0 w-[150px] bg-[#222222] p-5 rounded-2xl opacity-0 translate-y-2 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible pointer-events-auto"
+                >
+                  <ul class="text-white space-y-2">
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Car Grid</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Car Listing</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Car Types</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Car Details</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="hover:text-[rgb(245,183,84)] group relative transition duration-300 ease-in-out"
+              >
+                <a href="#">Pages<i class="fa-solid fa-caret-down"></i></a>
+                <!-- Dropdown Menu -->
+                <div
+                  id="dropdown-menu"
+                  class="absolute top-full left-0 w-[150px] bg-[#222222] p-5 rounded-2xl opacity-0 translate-y-2 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible pointer-events-auto group"
+                >
+                  <ul class="text-white space-y-2">
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Team</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Image Gallery</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Video Gallery</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Pricing</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out cursor-pointer"
+                    >
+                      <a href="#" class="block px-3 py-1">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="hover:text-[rgb(245,183,84)] transition duration-300 ease-in-out group"
+              >
+                <a href="#">Blog <i class="fa-solid fa-caret-down"></i></a>
+                <div
+                  id="dropdown-menu"
+                  class="absolute top-full w-[150px] bg-[#222222] p-5 rounded-2xl opacity-0 translate-y-2 invisible transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible pointer-events-auto"
+                >
+                  <ul class="text-white space-y-2">
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Blog Grid 01</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Blog Grid 02</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Blog List</a>
+                    </li>
+                    <li
+                      class="hover:text-[rgb(245,183,84)] hover:translate-x-2 transition duration-300 ease-in-out"
+                    >
+                      <a href="#" class="block px-3 py-1">Past Single</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="hover:text-[rgb(245,183,84)] transition duration-300 ease-in-out"
+              >
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+
+            <div id="nav-contact" class="flex items-center gap-3">
+              <div
+                id="contact-icon"
+                class="bg-transparent p-2.5 flex items-center justify-center rounded-full border border-[rgb(245,183,84)] hover:bg-[rgb(245,183,84)] transition duration-300 ease-in-out group b"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-6 h-6 stroke-[1.5] text-white group-hover:text-black"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
+                  />
+                </svg>
+              </div>
+
+              <div id="contact-text" class="text-white">
+                <p class="text-[12px]">Need help?</p>
+                <a class="text-[17px]" href="#">855 100 4444</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="container" class="max-w-[1200px] mx-auto">
+        <div id="hero-area" class="w-[80%] absolute top-[30%] text-start">
+          <div id="middle-contant">
+            <h6
+              class="uppercase text-[14px] text-[rgb(245,183,84)] tracking-[6px]"
+            >
+              * Premium
+            </h6>
+            <h1 class="text-[90px] text-white font-extrabold leading-[1]">
+              Rental Car
+            </h1>
+            <div class="flex items-center gap-3">
+              <h5 class="text-[17px] text-white">Audi RS7 Sportback</h5>
+              <span class="text-[rgb(245,183,84)] text-[21px] font-bold">
+                $450 <span class="text-[12px] text-white">/ day</span>
+              </span>
+            </div>
+            <div id="btn" class="flex items-center gap-3 pt-5">
+              <a
+                class="text-[14px] bg-[rgb(245,183,84)] min-w-[150px] min-h-[50px] flex justify-center items-center rounded-[50px] hover:bg-white transition duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg"
+                href="#"
+              >
+                View Details<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 pl-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+              <a
+                class="text-white text-[14px] bg-transparent border border-white min-w-[150px] min-h-[50px] flex justify-center items-center rounded-[50px] hover:text-black hover:bg-[rgb(245,183,84)] hover:border-0 transition duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg"
+                href="#"
+              >
+                Rent Now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 pl-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
